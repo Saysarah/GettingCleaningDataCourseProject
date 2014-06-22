@@ -71,7 +71,10 @@ ________________________
 20.	fBodyGyroJerkMag.std : numeric value
 
 
-the meanSdData dataframe is a larger dataframe, contains all the relevant mean and  standard deviation variables, the corresponding rows are listed below. Note that mean frequency and angular data were omitted from the original dataset during this analysis.
+the meanSdData dataframe in R is a larger dataframe, contains all the relevant mean and  standard deviation variables, the corresponding rows are listed below. Note that mean frequency and angular data were omitted from the original dataset during this analysis.
+
+columns 4 - 69 are numerical values, note that the 3-axial signals in the X, Y and Z directions are included in this dataset
+
 
 1.	dataset : a factor object designated if the measurement is of the test or train dataset 
           -	test
@@ -84,9 +87,6 @@ the meanSdData dataframe is a larger dataframe, contains all the relevant mean a
           5. Standing
           6. Laying
 3.	patientId :  a numeric value identifying the patient (1-30)
-
-columns 4 - 69 are numerical values, note that the 3-axial signals in the X, Y and Z directions are included in this dataset
-
 4.	tBodyAc.mean.X
 5.	tBodyAc.mean.Y
 6.	tBodyAc.mean.Z
