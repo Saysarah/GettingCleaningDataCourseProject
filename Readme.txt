@@ -1,9 +1,17 @@
+==================================================================
+Cleaned Data
+Human Activity Recognition Using Smartphones Dataset
+==================================================================
+
+Sarah Sayed
+
 This project is cleaning up data from UCI's machine learning Repository,
 Data files were downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 on 17/06/2014
 
 Permission to use this dataset obtained from the Author: 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
 
 DESCRIPTION
 --------------------------------
@@ -20,7 +28,7 @@ Please refer to the original data's readMe.txt for more information regarding th
 - features.txt, a text document containing a description of all the features in this database
 - feature_info.txt, describes the features of this database and lists the variables estimated from the measured signal
 
-CONTENT: The Dataset includes the following files:
+CONTENTS: The Dataset includes the following files:
 ---------------------------------
 - readMe.txt
 - Codebook.md
