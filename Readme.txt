@@ -5,7 +5,7 @@ on 17/06/2014
 Permission to use this dataset obtained from the Author: 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-Description
+DESCRIPTION
 --------------------------------
 This program cleans the dataset to only display columns containing the mean and standard deviation information for the data for patients 1-30.
 
@@ -20,13 +20,13 @@ Please refer to the original data's readMe.txt for more information regarding th
 - features.txt, a text document containing a description of all the features in this database
 - feature_info.txt, describes the features of this database and lists the variables estimated from the measured signal
 
-The Dataset includes the following files:
+CONTENT: The Dataset includes the following files:
 ---------------------------------
 - readMe.txt
 - Codebook.md
 - run_analysis.R, file to run to clean and print out data of interest
-- cleanDF.txt
-- activity_labels.txt
+- cleanDF.txt, the cleaned dataset
+- step4_df.txt dataframe containing removed mean and standard deviation measurements see notes below
 - subject_test.txt,
 - x_text.txt
 - y_text.txt 
@@ -40,7 +40,7 @@ the x_test.txt and y_train.txt contain the measurements corresponding to 30 test
 The activity_labels.txt, contains the legend for the labels (1-5) that correspond to different activity preformed in y_train.txt and y_test.txt to describe activity corresponding to x_test.txt and ytrain.txt
 
 
-Data processing:
+DATA PROCESSING 
 --------------------------------
 
 The data was read in R using read.tale(). 
@@ -64,12 +64,14 @@ the resulting dataset was combined with the one above using cbind()
 write.table() was used to create a text file with the resulting clean dataset, cleanDF.txt
 
 
-Assumptions:
+NOTES/ ASSUMPTIONS 
 ---------------------------------------------------------------------
 The Intertial signal values were ignored from the original dataset as they were not values of interest
-The meanSdData dataframe object in run_analysis.R includes all the features of the dataset that contain mean() or std() information,  however the mean frequency and angle data was omitted.
+The meanSdData dataframe object in run_analysis.R includes all the features of the dataset that contain mean() or std() information,  
+however the mean frequency and angle data was omitted.
 
 A final cleaned up datafame object, called final_df, displays the mean of the mean() and std() information, averaging determining an averages for each patient (one average per activity). The last 6 columns of this data frame includes overall means for all patients. 
 
-Since the meanSdData dataframe was a large file, for the final cleaned dataframe I omitted mean and standard deviation data containing X,Y,Z components.
-Should the user be interested in additional variables they may consult themeanSdData frame and modify the meanSdDataMelt dataset and corresponding code as required to include additional measurements.
+Since the meanSdData dataframe was a large file, for the final cleaned dataframe the mean and standard deviation data containing X,Y,Z components were ommitted.
+Should the user be interested in additional variables they may consult  the step4_df.txt
+and modify the meanSdDataMelt dataset and corresponding code as required to include additional measurements.
