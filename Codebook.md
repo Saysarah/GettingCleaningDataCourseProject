@@ -18,26 +18,8 @@ Since the meanSdData dataframe was a large file, for the final cleaned dataframe
 Values for columns 3-20 display the mean of  all the measurements corresponding to patient ID for a given activity level
 Note for colums 1-20 the following convention was used for the names:
 
-The name is prefixed with either a  t or f:
-t - refers to time domain signals to obtain jerk signals, taken at a constant rate of 50 Hz  and adjusted 
-f – frequency time domain sigals, Refers to values obtained from a fourier transform
 
-The middle of the name consists of the following abbreviations:
-
-GravAcMag – refers the eculeadian norm used to determine magnitude of the gravity acceleration signals
-BodyAcMag – refers to eculeadian norm used to calculate magnitude of the body acceleration signals 
-BodyGyroMag – refers to the magnitude of the body jerk signals measured from the gyroscope 
-BodyAcJerkMag – refers to eucleadian norm used to calculate magnitude of the body acceleration jerk signals 
-BodyGyroJerkMag – refers to the magnitude of the body jerk signals measured from the gyroscope 
-
-These signals were used to estimate variables of the feature vector for each pattern
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-The end of the name
-. mean – indicates a mean value
-. std – indicates standard deviation values
-
-CODEBOOK
+CODEBOOK : refer to bottom for variable descriptions 
 ________________________
 
 
@@ -153,4 +135,23 @@ columns 4 - 69 are numerical values, note that the 3-axial signals in the X, Y a
 67.	fBodyGyroMag.std
 68.	fBodyGyroJerkMag.mean
 69.	fBodyGyroJerkMag.std
+
+The name is prefixed with either a  t or f:
+t - refers to time domain signals to obtain jerk signals, taken at a constant rate of 50 Hz  and adjusted 
+f – frequency time domain sigals, Refers to values obtained from a fourier transform
+
+The middle of the name consists of the following abbreviations:
+
+GravAcMag – refers the eculeadian norm used to determine magnitude of the gravity acceleration signals
+BodyAcMag – refers to eculeadian norm used to calculate magnitude of the body acceleration signals 
+BodyGyroMag – refers to the magnitude of the body jerk signals measured from the gyroscope 
+BodyAcJerkMag – refers to eucleadian norm used to calculate magnitude of the body acceleration jerk signals 
+BodyGyroJerkMag – refers to the magnitude of the body jerk signals measured from the gyroscope 
+
+These signals were used to estimate variables of the feature vector for each pattern
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The end of the name
+. mean – indicates a mean value
+. std – indicates standard deviation values
 
