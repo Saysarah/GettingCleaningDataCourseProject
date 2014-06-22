@@ -71,7 +71,7 @@ ________________________
 20.	fBodyGyroJerkMag.std : numeric value
 
 
-the meanSdData dataframe in R is a larger dataframe, contains all the relevant mean and  standard deviation variables, the corresponding rows are listed below. Note that mean frequency and angular data were omitted from the original dataset during this analysis.
+the step4_df.txt data frame (meanSdData dataframe in run_analysis.R) is a larger dataframe, contains all the relevant mean and  standard deviation variables, the corresponding rows are listed below. Note that mean frequency and angular data were omitted from the original dataset during this analysis.
 
 columns 4 - 69 are numerical values, note that the 3-axial signals in the X, Y and Z directions are included in this dataset
 
