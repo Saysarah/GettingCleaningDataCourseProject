@@ -137,7 +137,7 @@ finalData <- rbind(meanSdDat,finalDataAssembled)
 
 ## Create a text file with the cleaned up dataset for step 5
 final_df <- finalData
-file <- "~/CleanData/UCI HAR Dataset/cleanDf.pdf"
+file <- "~/CleanData/UCI HAR Dataset/cleanDf.txt"
 write.table(final_df, file = file, row.names=FALSE, col.names=TRUE, sep="\t", quote = FALSE)
                 
 ## Create a text file with the data from step 1-4 with all mean and std variables included for all values
